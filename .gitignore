@@ -1,0 +1,42 @@
+# Operating system-generated files and folders
+.DS_Store
+Thumbs.db
+
+# IDE-specific configuration files
+.idea/
+.vscode/
+
+# Node.js dependencies and modules
+node_modules/
+
+# Build artifacts and compiled results
+dist/
+build/
+out/
+target/
+.turbo/
+
+# Temporary files
+*.tmp
+*.log
+
+# Python virtual environments
+venv/
+env/
+
+# Credential and secret files
+.env
+*.key
+*.pem
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# Data storage directories
+data/
+db/
