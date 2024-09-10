@@ -1,3 +1,5 @@
-export default {
-    mongoURI: 'mongodb+srv://claritycashDB:0SXajxkhTNvA4B8s@claritycashcluster.vypoaza.mongodb.net/'
-};
+// import { ConfigService } from '@nestjs/config';
+
+// export default {
+//     mongoURI: 'mongodb+srv://clarity-cash-user-db:TKNt3HxgwsqX0w7l@claritycashcluster.vypoaza.mongodb.net/claritycashdb'
+// };
