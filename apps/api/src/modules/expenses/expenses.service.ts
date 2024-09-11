@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { createExpenseDTO } from './dtos/createExpenseDTO';
+import { updateExpenseDTO } from './dtos/updateExpenseDTO';
 import { InjectModel } from '@nestjs/mongoose';
 import { Expenses, expensesDocument } from './schemas/expenses.schema'
 import { Model } from 'mongoose';
@@ -14,13 +15,23 @@ export class ExpensesService {
         return await this.expensesModule.create(createExpenseDTO);
     }
 
-    async findAll() {
-        return await this.expensesModule.find();
+    async update(id: string, expense: updateExpenseDTO) {
+        return await this.expensesModule.findByIdAndUpdate(id, expense, {
+            new: true,
+        }).exec();
     }
 
-    findOne(id: number) {
-        return `This is the information about the idqqq: ${id}`
+    async findAll() {
+        return await this.expensesModule.find().exec();
     }
+
+    async findOne(id: string) {
+        return await this.expensesModule.findById(id).exec();    
+    }
+
+    async delete(id: string) {
+        return await this.expensesModule.findByIdAndDelete(id).exec();
+    }   
 }
 
 
