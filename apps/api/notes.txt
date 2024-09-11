@@ -2,7 +2,7 @@ nest.js generar nuevo modulo:
 nest g mo expenses
 
 nest.js generar nuevo controller:
-nest g co expenses
+nest g co categories
 
 nest.js generar nuevo servicio:
-nest g s expenses
+nest g s modules/categories

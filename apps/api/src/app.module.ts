@@ -4,6 +4,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ExpensesModule } from './modules/expenses/expenses.module';
+import { CategoriesModule } from './modules/categories/categories.module';
+
 
 @Module({
   imports: [
@@ -18,6 +20,7 @@ import { ExpensesModule } from './modules/expenses/expenses.module';
               inject: [ConfigService],
             }),
             ExpensesModule,
+            CategoriesModule,
           ],
   controllers: [AppController],
   providers: [AppService],
