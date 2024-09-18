@@ -1,8 +1,8 @@
 nest.js generar nuevo modulo:
-nest g mo incomes
+nest g mo payment-methods
 
 nest.js generar nuevo controller:
-nest g co incomes
+nest g co payment-methods
 
 nest.js generar nuevo servicio:
-nest g s incomes
+nest g s payment-methods
