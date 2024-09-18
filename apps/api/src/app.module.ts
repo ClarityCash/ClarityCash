@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ExpensesModule } from './modules/expenses/expenses.module';
 import { CategoriesModule } from './modules/categories/categories.module';
+import { IncomesModule } from './modules/incomes/incomes.module';
 
 
 @Module({
@@ -21,6 +22,7 @@ import { CategoriesModule } from './modules/categories/categories.module';
             }),
             ExpensesModule,
             CategoriesModule,
+            IncomesModule,
           ],
   controllers: [AppController],
   providers: [AppService],
