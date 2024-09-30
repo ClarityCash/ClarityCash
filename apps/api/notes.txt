@@ -6,3 +6,5 @@ nest g co payment-methods
 
 nest.js generar nuevo servicio:
 nest g s payment-methods
+
+nest g resource auth
