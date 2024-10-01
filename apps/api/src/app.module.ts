@@ -8,6 +8,7 @@ import { CategoriesModule } from './modules/categories/categories.module';
 import { IncomesModule } from './modules/incomes/incomes.module';
 import { PaymentMethodsModule } from './modules/payment-methods/payment-methods.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { CategorieTypesModule } from './modules/categorie-types/categorie-types.module';
 
 
 @Module({
@@ -26,7 +27,8 @@ import { AuthModule } from './modules/auth/auth.module';
             CategoriesModule,
             IncomesModule,
             PaymentMethodsModule,
-            AuthModule
+            AuthModule,
+            CategorieTypesModule
           ],
   controllers: [AppController],
   providers: [AppService],
