@@ -1,0 +1,133 @@
+
+> api@0.0.1 start C:\Repos\ClarityCash\apps\api
+> nest start
+
+(node:17072) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32m[Nest] 22832  - [39m12/04/2025, 4:44:35 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 22832  - [39m12/04/2025, 4:44:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +7ms[39m
+[32m[Nest] 22832  - [39m12/04/2025, 4:44:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22832  - [39m12/04/2025, 4:44:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22832  - [39m12/04/2025, 4:44:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 22832  - [39m12/04/2025, 4:44:35 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[Nest] 22832  - 12/04/2025, 4:44:35 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (1)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:38 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (2)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:41 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (3)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:44 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (4)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:47 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (5)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:50 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (6)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:53 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (7)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:56 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (8)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:59 PM   ERROR [MongooseModule] Unable to connect to the database. Retrying (9)...
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+[Nest] 22832  - 12/04/2025, 4:44:59 PM   ERROR [ExceptionHandler] The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:219:11)
+    at NativeConnection.openUri (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\connection.js:823:34)
+    at Mongoose.createConnection (C:\Repos\ClarityCash\node_modules\.pnpm\mongoose@8.5.2\node_modules\mongoose\lib\mongoose.js:389:10)
+    at MongooseCoreModule.createMongooseConnection (C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:114:37)
+    at C:\Repos\ClarityCash\node_modules\.pnpm\@nestjs+mongoose@10.0.10_@nestjs+common@10.3.10_class-transformer@0.5.1_class-validator@0.14._rkc4p3wcha4zoyz6txengc3epm\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:65:123
+    at Observable._subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\observable\defer.ts:55:15)
+    at Observable.Observable._trySubscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:244:19)
+    at <anonymous> (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:234:18)
+    at Object.errorContext (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\util\errorContext.ts:29:5)
+    at Observable.Observable.subscribe (C:\Repos\ClarityCash\node_modules\.pnpm\rxjs@7.8.1\node_modules\rxjs\src\internal\Observable.ts:220:5)
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
